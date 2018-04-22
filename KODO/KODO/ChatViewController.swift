@@ -44,7 +44,7 @@ class ChatViewController: UIViewController {
         // 3
         let animationDurarion = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
         // 4
-        let changeInHeight = (keyboardFrame.height + 0) * (show ? 1 : -1)
+        let changeInHeight = (keyboardFrame.height) * (show ? 1 : -1)
         //5
         UIView.animate(withDuration: animationDurarion, animations: { () -> Void in
             self.bottomConstraint.constant += changeInHeight
@@ -109,7 +109,7 @@ class ChatViewController: UIViewController {
 
             chatCollectionVc.chatRecords.append((text, true))
             chatCollectionVc.collectionView?.reloadData()
-            chatCollectionVc.collectionView?.scrollToItem(at: IndexPath(row: chatCollectionVc.chatRecords.count - 1, section: 0), at: .top, animated: false)
+            chatCollectionVc.collectionView?.scrollToItem(at: IndexPath(row: chatCollectionVc.chatRecords.count - 2, section: 0), at: .top, animated: false)
 
             let nameArr = text.components(separatedBy: "My name is ")
             let ageArr = text.components(separatedBy: "years old")
@@ -155,7 +155,7 @@ class ChatViewController: UIViewController {
                     task.resume()
                     self.chatCollectionVc.chatRecords.append((textResponse, false))
                     self.chatCollectionVc.collectionView?.reloadData()
-                    self.chatCollectionVc.collectionView?.scrollToItem(at: IndexPath(row: self.chatCollectionVc.chatRecords.count - 1, section: 0), at: .top, animated: false)
+                    self.chatCollectionVc.collectionView?.scrollToItem(at: IndexPath(row: self.chatCollectionVc.chatRecords.count - 2, section: 0), at: .top, animated: false)
 
                     url = URL(string: "http://172.20.206.155:8081/server/user/updateUserChatBotMessages")!
                     request = URLRequest(url: url)

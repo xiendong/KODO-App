@@ -21,14 +21,43 @@ class ChatViewController: UIViewController {
         UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseInOut, animations: {}, completion: nil)
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+
+    @objc func keyboardWillShow(notification:NSNotification) {
+        adjustingHeight(true, notification: notification)
+    }
+
+    @objc func keyboardWillHide(notification:NSNotification) {
+        adjustingHeight(false, notification: notification)
+    }
+
+    func adjustingHeight(_ show:Bool, notification:NSNotification) {
+        // 1
+        var userInfo = notification.userInfo!
+        // 2
+        let keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        // 3
+        let animationDurarion = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
+        // 4
+        let changeInHeight = (keyboardFrame.height + 0) * (show ? 1 : -1)
+        //5
+        UIView.animate(withDuration: animationDurarion, animations: { () -> Void in
+            self.bottomConstraint.constant += changeInHeight
+        })
+
+    }
+    
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+
     struct Variables {
         static var name = ""
         static var age = ""
         static var userID = "0000"
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning() {
@@ -163,3 +192,6 @@ class ChatViewController: UIViewController {
         }
     }
 }
+
+
+

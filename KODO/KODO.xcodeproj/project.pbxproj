@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A782DDD45F7A4D5A37B39340 /* Pods_KODO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A84629AA32F1CF057A5D690 /* Pods_KODO.framework */; };
+		DF81E6E2208C47390006F283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF81E6E1208C47390006F283 /* AppDelegate.swift */; };
+		DF81E6E4208C47390006F283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF81E6E3208C47390006F283 /* ViewController.swift */; };
+		DF81E6E7208C47390006F283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF81E6E5208C47390006F283 /* Main.storyboard */; };
+		DF81E6EC208C47390006F283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF81E6EA208C47390006F283 /* LaunchScreen.storyboard */; };
+		DF81E6F4208C5A650006F283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF81E6F3208C5A640006F283 /* Assets.xcassets */; };
+		DF81E6F6208C6A0E0006F283 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF81E6F5208C6A0E0006F283 /* ChatBubble.swift */; };
+		DF81E6F8208C6FDD0006F283 /* ChatCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF81E6F7208C6FDD0006F283 /* ChatCollectionViewController.swift */; };
+		DFD0F235208CEC11006DF6ED /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD0F234208CEC11006DF6ED /* ChatViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A84629AA32F1CF057A5D690 /* Pods_KODO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KODO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F77ECB126C932F1D1A886F5 /* Pods-KODO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KODO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KODO/Pods-KODO.debug.xcconfig"; sourceTree = "<group>"; };
+		7A901F77EB4E7B0287C2152A /* Pods-KODO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KODO.release.xcconfig"; path = "Pods/Target Support Files/Pods-KODO/Pods-KODO.release.xcconfig"; sourceTree = "<group>"; };
+		DF81E6DE208C47390006F283 /* KODO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KODO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF81E6E1208C47390006F283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF81E6E3208C47390006F283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF81E6E6208C47390006F283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF81E6EB208C47390006F283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF81E6ED208C47390006F283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF81E6F3208C5A640006F283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF81E6F5208C6A0E0006F283 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		DF81E6F7208C6FDD0006F283 /* ChatCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewController.swift; sourceTree = "<group>"; };
+		DFD0F234208CEC11006DF6ED /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF81E6DB208C47390006F283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A782DDD45F7A4D5A37B39340 /* Pods_KODO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D94914BF368C560C17D5135 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F77ECB126C932F1D1A886F5 /* Pods-KODO.debug.xcconfig */,
+				7A901F77EB4E7B0287C2152A /* Pods-KODO.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB012691B3D95D80276FC4E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A84629AA32F1CF057A5D690 /* Pods_KODO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF81E6D5208C47390006F283 = {
+			isa = PBXGroup;
+			children = (
+				DF81E6E0208C47390006F283 /* KODO */,
+				DF81E6DF208C47390006F283 /* Products */,
+				4D94914BF368C560C17D5135 /* Pods */,
+				CB012691B3D95D80276FC4E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF81E6DF208C47390006F283 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF81E6DE208C47390006F283 /* KODO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF81E6E0208C47390006F283 /* KODO */ = {
+			isa = PBXGroup;
+			children = (
+				DF81E6F3208C5A640006F283 /* Assets.xcassets */,
+				DF81E6E1208C47390006F283 /* AppDelegate.swift */,
+				DF81E6E3208C47390006F283 /* ViewController.swift */,
+				DF81E6F7208C6FDD0006F283 /* ChatCollectionViewController.swift */,
+				DF81E6E5208C47390006F283 /* Main.storyboard */,
+				DFD0F234208CEC11006DF6ED /* ChatViewController.swift */,
+				DF81E6F5208C6A0E0006F283 /* ChatBubble.swift */,
+				DF81E6EA208C47390006F283 /* LaunchScreen.storyboard */,
+				DF81E6ED208C47390006F283 /* Info.plist */,
+			);
+			path = KODO;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF81E6DD208C47390006F283 /* KODO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF81E6F0208C47390006F283 /* Build configuration list for PBXNativeTarget "KODO" */;
+			buildPhases = (
+				842916CBB6578A1767F4FED1 /* [CP] Check Pods Manifest.lock */,
+				DF81E6DA208C47390006F283 /* Sources */,
+				DF81E6DB208C47390006F283 /* Frameworks */,
+				DF81E6DC208C47390006F283 /* Resources */,
+				82E9AEAAE4A77320D461F1F8 /* [CP] Embed Pods Frameworks */,
+				9BEE32808F6662B99A09D4C9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KODO;
+			productName = KODO;
+			productReference = DF81E6DE208C47390006F283 /* KODO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF81E6D6208C47390006F283 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Xien Dong";
+				TargetAttributes = {
+					DF81E6DD208C47390006F283 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DF81E6D9208C47390006F283 /* Build configuration list for PBXProject "KODO" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF81E6D5208C47390006F283;
+			productRefGroup = DF81E6DF208C47390006F283 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF81E6DD208C47390006F283 /* KODO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF81E6DC208C47390006F283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF81E6EC208C47390006F283 /* LaunchScreen.storyboard in Resources */,
+				DF81E6F4208C5A650006F283 /* Assets.xcassets in Resources */,
+				DF81E6E7208C47390006F283 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82E9AEAAE4A77320D461F1F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KODO/Pods-KODO-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KODO/Pods-KODO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		842916CBB6578A1767F4FED1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KODO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BEE32808F6662B99A09D4C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KODO/Pods-KODO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF81E6DA208C47390006F283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF81E6F8208C6FDD0006F283 /* ChatCollectionViewController.swift in Sources */,
+				DF81E6E4208C47390006F283 /* ViewController.swift in Sources */,
+				DF81E6F6208C6A0E0006F283 /* ChatBubble.swift in Sources */,
+				DFD0F235208CEC11006DF6ED /* ChatViewController.swift in Sources */,
+				DF81E6E2208C47390006F283 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF81E6E5208C47390006F283 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF81E6E6208C47390006F283 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF81E6EA208C47390006F283 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF81E6EB208C47390006F283 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF81E6EE208C47390006F283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF81E6EF208C47390006F283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF81E6F1208C47390006F283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F77ECB126C932F1D1A886F5 /* Pods-KODO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRAG75S7MD;
+				INFOPLIST_FILE = KODO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.medgel.KODO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF81E6F2208C47390006F283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A901F77EB4E7B0287C2152A /* Pods-KODO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRAG75S7MD;
+				INFOPLIST_FILE = KODO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.medgel.KODO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF81E6D9208C47390006F283 /* Build configuration list for PBXProject "KODO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF81E6EE208C47390006F283 /* Debug */,
+				DF81E6EF208C47390006F283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF81E6F0208C47390006F283 /* Build configuration list for PBXNativeTarget "KODO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF81E6F1208C47390006F283 /* Debug */,
+				DF81E6F2208C47390006F283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF81E6D6208C47390006F283 /* Project object */;
+}
